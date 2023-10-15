@@ -1,0 +1,84 @@
+/* Container for the entire app */
+.App {
+  text-align: center;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+  background: linear-gradient(135deg, #f0f0f0, #d4e1f2); /* Gradient background */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Stylish forms */
+.auth-form-container, .login-form, .register-form {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  width: 80%; /* Adjust the width to your preference (e.g., 80%) */
+  max-width: 600px; /* Set a maximum width to maintain readability */
+  margin: 0 auto; /* Center the box horizontally on the screen */
+  transform: scale(0.98); /* Slight scaling effect */
+  transition: transform 0.3s;
+}
+
+.auth-form-container:hover {
+  transform: scale(1); /* Hover effect to scale up */
+}
+
+/* Stylish labels */
+label {
+  text-align: left;
+  padding: 0.5rem 0;
+  color: #7439db; /* Purple label color */
+  font-weight: bold;
+}
+
+/* Input fields with a subtle hover effect */
+input {
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f0f0f0;
+  color: #333;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+input:hover {
+  background-color: #d4e1f2; /* Light blue on hover */
+  transform: scale(1.01); /* Slight scaling effect on hover */
+}
+
+/* Stylish button with a gradient and hover effect */
+button {
+  border: none;
+  background: linear-gradient(135deg, #7439db, #512e6e); /* Gradient button background */
+  padding: 1rem 2rem;
+  border-radius: 15px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #512e6e, #7439db); /* Gradient on hover */
+  transform: scale(1.03); /* Slight scaling effect on hover */
+}
+
+/* Stylish link buttons */
+.link-btn {
+  color: #7439db;
+  text-decoration: underline;
+  padding: 0.5rem;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.link-btn:hover {
+  color: #512e6e; /* Purple color on hover */
+}
